@@ -3,7 +3,7 @@ import initAnimacaoScroll from "./modules/scroll-animacao.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js";
 import Modal from "./modules/modal.js";
-import initTooltip from "./modules/tooltip.js";
+import Tooltip from "./modules/tooltip.js";
 import initdropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
@@ -29,7 +29,9 @@ const modal = new Modal(
 );
 modal.init();
 
-initTooltip();
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 initdropdownMenu();
 initMenuMobile();
 initFetchBitcoin();
