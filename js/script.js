@@ -45,4 +45,4 @@ const funcionamento = new Funcionamento("[data-semana]", 'aberto');
 funcionamento.init();
 
 FetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
-fetchAnimais("../../animaisapi.json", "numeros-grid");
+fetchAnimais("./animaisapi.json", "numeros-grid");
